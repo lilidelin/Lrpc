@@ -1,2 +1,2 @@
-# Empty dependencies file for protobuf_demo.
+# Empty dependencies file for configtest.
 # This may be replaced when dependencies are built.

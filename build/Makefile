@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/admin/projects/Lrpc
+CMAKE_SOURCE_DIR = /home/projects/Lrpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/admin/projects/Lrpc/build
+CMAKE_BINARY_DIR = /home/projects/Lrpc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/projects/Lrpc/build/CMakeFiles /home/admin/projects/Lrpc/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/projects/Lrpc/build/CMakeFiles /home/projects/Lrpc/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/projects/Lrpc/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/projects/Lrpc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,65 +117,89 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named protobuf_demo
+# Target rules for targets named configtest
 
 # Build rule for target.
-protobuf_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 protobuf_demo
-.PHONY : protobuf_demo
+configtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 configtest
+.PHONY : configtest
 
 # fast build rule for target.
-protobuf_demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf_demo.dir/build.make CMakeFiles/protobuf_demo.dir/build
-.PHONY : protobuf_demo/fast
+configtest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/build
+.PHONY : configtest/fast
 
-test/usrtest.o: test/usrtest.cc.o
-.PHONY : test/usrtest.o
-
-# target to build an object file
-test/usrtest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf_demo.dir/build.make CMakeFiles/protobuf_demo.dir/test/usrtest.cc.o
-.PHONY : test/usrtest.cc.o
-
-test/usrtest.i: test/usrtest.cc.i
-.PHONY : test/usrtest.i
-
-# target to preprocess a source file
-test/usrtest.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf_demo.dir/build.make CMakeFiles/protobuf_demo.dir/test/usrtest.cc.i
-.PHONY : test/usrtest.cc.i
-
-test/usrtest.s: test/usrtest.cc.s
-.PHONY : test/usrtest.s
-
-# target to generate assembly for a file
-test/usrtest.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf_demo.dir/build.make CMakeFiles/protobuf_demo.dir/test/usrtest.cc.s
-.PHONY : test/usrtest.cc.s
-
-user/user.pb.o: user/user.pb.cc.o
-.PHONY : user/user.pb.o
+src/LrpcApplication.o: src/LrpcApplication.cc.o
+.PHONY : src/LrpcApplication.o
 
 # target to build an object file
-user/user.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf_demo.dir/build.make CMakeFiles/protobuf_demo.dir/user/user.pb.cc.o
-.PHONY : user/user.pb.cc.o
+src/LrpcApplication.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/src/LrpcApplication.cc.o
+.PHONY : src/LrpcApplication.cc.o
 
-user/user.pb.i: user/user.pb.cc.i
-.PHONY : user/user.pb.i
+src/LrpcApplication.i: src/LrpcApplication.cc.i
+.PHONY : src/LrpcApplication.i
 
 # target to preprocess a source file
-user/user.pb.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf_demo.dir/build.make CMakeFiles/protobuf_demo.dir/user/user.pb.cc.i
-.PHONY : user/user.pb.cc.i
+src/LrpcApplication.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/src/LrpcApplication.cc.i
+.PHONY : src/LrpcApplication.cc.i
 
-user/user.pb.s: user/user.pb.cc.s
-.PHONY : user/user.pb.s
+src/LrpcApplication.s: src/LrpcApplication.cc.s
+.PHONY : src/LrpcApplication.s
 
 # target to generate assembly for a file
-user/user.pb.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf_demo.dir/build.make CMakeFiles/protobuf_demo.dir/user/user.pb.cc.s
-.PHONY : user/user.pb.cc.s
+src/LrpcApplication.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/src/LrpcApplication.cc.s
+.PHONY : src/LrpcApplication.cc.s
+
+src/LrpcConfig.o: src/LrpcConfig.cc.o
+.PHONY : src/LrpcConfig.o
+
+# target to build an object file
+src/LrpcConfig.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/src/LrpcConfig.cc.o
+.PHONY : src/LrpcConfig.cc.o
+
+src/LrpcConfig.i: src/LrpcConfig.cc.i
+.PHONY : src/LrpcConfig.i
+
+# target to preprocess a source file
+src/LrpcConfig.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/src/LrpcConfig.cc.i
+.PHONY : src/LrpcConfig.cc.i
+
+src/LrpcConfig.s: src/LrpcConfig.cc.s
+.PHONY : src/LrpcConfig.s
+
+# target to generate assembly for a file
+src/LrpcConfig.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/src/LrpcConfig.cc.s
+.PHONY : src/LrpcConfig.cc.s
+
+test/configtest.o: test/configtest.cc.o
+.PHONY : test/configtest.o
+
+# target to build an object file
+test/configtest.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/test/configtest.cc.o
+.PHONY : test/configtest.cc.o
+
+test/configtest.i: test/configtest.cc.i
+.PHONY : test/configtest.i
+
+# target to preprocess a source file
+test/configtest.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/test/configtest.cc.i
+.PHONY : test/configtest.cc.i
+
+test/configtest.s: test/configtest.cc.s
+.PHONY : test/configtest.s
+
+# target to generate assembly for a file
+test/configtest.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/test/configtest.cc.s
+.PHONY : test/configtest.cc.s
 
 # Help Target
 help:
@@ -185,13 +209,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... protobuf_demo"
-	@echo "... test/usrtest.o"
-	@echo "... test/usrtest.i"
-	@echo "... test/usrtest.s"
-	@echo "... user/user.pb.o"
-	@echo "... user/user.pb.i"
-	@echo "... user/user.pb.s"
+	@echo "... configtest"
+	@echo "... src/LrpcApplication.o"
+	@echo "... src/LrpcApplication.i"
+	@echo "... src/LrpcApplication.s"
+	@echo "... src/LrpcConfig.o"
+	@echo "... src/LrpcConfig.i"
+	@echo "... src/LrpcConfig.s"
+	@echo "... test/configtest.o"
+	@echo "... test/configtest.i"
+	@echo "... test/configtest.s"
 .PHONY : help
 
 

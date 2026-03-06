@@ -1,5 +1,6 @@
 #include"LrpcConfig.h"
 #include<memory>
+#include<stdexcept>
 
 //加载配置文件，解析文件中的键值对
 void LrpcConfig::LoadConfigFile(const char* config_file){

@@ -54,16 +54,16 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/admin/projects/Lrpc
+CMAKE_SOURCE_DIR = /home/projects/Lrpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/admin/projects/Lrpc/build
+CMAKE_BINARY_DIR = /home/projects/Lrpc/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/protobuf_demo.dir/all
+all: CMakeFiles/configtest.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/protobuf_demo.dir/clean
+clean: CMakeFiles/configtest.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/protobuf_demo.dir
+# Target rules for target CMakeFiles/configtest.dir
 
 # All Build rule for target.
-CMakeFiles/protobuf_demo.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf_demo.dir/build.make CMakeFiles/protobuf_demo.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf_demo.dir/build.make CMakeFiles/protobuf_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/admin/projects/Lrpc/build/CMakeFiles --progress-num=1,2,3 "Built target protobuf_demo"
-.PHONY : CMakeFiles/protobuf_demo.dir/all
+CMakeFiles/configtest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/projects/Lrpc/build/CMakeFiles --progress-num=1,2,3,4 "Built target configtest"
+.PHONY : CMakeFiles/configtest.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/protobuf_demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/projects/Lrpc/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/protobuf_demo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/projects/Lrpc/build/CMakeFiles 0
-.PHONY : CMakeFiles/protobuf_demo.dir/rule
+CMakeFiles/configtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/projects/Lrpc/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/configtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/projects/Lrpc/build/CMakeFiles 0
+.PHONY : CMakeFiles/configtest.dir/rule
 
 # Convenience name for target.
-protobuf_demo: CMakeFiles/protobuf_demo.dir/rule
-.PHONY : protobuf_demo
+configtest: CMakeFiles/configtest.dir/rule
+.PHONY : configtest
 
 # clean rule for target.
-CMakeFiles/protobuf_demo.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf_demo.dir/build.make CMakeFiles/protobuf_demo.dir/clean
-.PHONY : CMakeFiles/protobuf_demo.dir/clean
+CMakeFiles/configtest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/clean
+.PHONY : CMakeFiles/configtest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

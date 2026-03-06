@@ -13,14 +13,15 @@ endif()
 
 include_directories(
     ${PROTOBUF_INCLUDE_DIRS}
-    ./user
+    ./src/include
 )
 
 set(SOURCES
-    test/usrtest.cc
-    user/user.pb.cc
+    test/configtest.cc
+    ./src/LrpcApplication.cc
+    ./src/LrpcConfig.cc
 )
 
-add_executable(protobuf_demo ${SOURCES})
+add_executable(configtest ${SOURCES})
 
-target_link_libraries(protobuf_demo ${PROTOBUF_LIBRARIES})
+target_link_libraries(configtest ${PROTOBUF_LIBRARIES})

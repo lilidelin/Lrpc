@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "protobuf_demo"
+			"path" : "configtest"
 		}
 	],
 	"backtrace" : 1,
@@ -26,13 +26,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 24,
+				"line" : 25,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 26,
+				"line" : 27,
 				"parent" : 0
 			},
 			{
@@ -49,9 +49,6 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
-				},
-				{
 					"fragment" : "-std=gnu++11"
 				}
 			],
@@ -59,7 +56,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/admin/projects/Lrpc/./user"
+					"path" : "/home/projects/Lrpc/./src/include"
 				}
 			],
 			"language" : "CXX",
@@ -74,19 +71,16 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		}
 	],
-	"id" : "protobuf_demo::@6890427a1f51a3e7e1df",
+	"id" : "configtest::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -99,8 +93,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "protobuf_demo",
-	"nameOnDisk" : "protobuf_demo",
+	"name" : "configtest",
+	"nameOnDisk" : "configtest",
 	"paths" : 
 	{
 		"build" : ".",
@@ -113,7 +107,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -122,13 +117,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "test/usrtest.cc",
+			"path" : "test/configtest.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "user/user.pb.cc",
+			"path" : "src/LrpcApplication.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/LrpcConfig.cc",
 			"sourceGroupIndex" : 0
 		}
 	],
