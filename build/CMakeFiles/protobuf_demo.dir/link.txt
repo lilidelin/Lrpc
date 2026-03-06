@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/protobuf_demo.dir/test/usrtest.cc.o CMakeFiles/protobuf_demo.dir/user/user.pb.cc.o -o protobuf_demo  /usr/lib/x86_64-linux-gnu/libprotobuf.so 
