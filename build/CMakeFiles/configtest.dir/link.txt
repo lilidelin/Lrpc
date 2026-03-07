@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/configtest.dir/test/configtest.cc.o CMakeFiles/configtest.dir/src/LrpcApplication.cc.o CMakeFiles/configtest.dir/src/LrpcConfig.cc.o -o configtest  /usr/lib/x86_64-linux-gnu/libprotobuf.so 

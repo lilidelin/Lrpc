@@ -117,24 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named configtest
+# Target rules for targets named notifyservice_test
 
 # Build rule for target.
-configtest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 configtest
-.PHONY : configtest
+notifyservice_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 notifyservice_test
+.PHONY : notifyservice_test
 
 # fast build rule for target.
-configtest/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/build
-.PHONY : configtest/fast
+notifyservice_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/build
+.PHONY : notifyservice_test/fast
+
+example/callee/Lservice.o: example/callee/Lservice.cc.o
+.PHONY : example/callee/Lservice.o
+
+# target to build an object file
+example/callee/Lservice.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/example/callee/Lservice.cc.o
+.PHONY : example/callee/Lservice.cc.o
+
+example/callee/Lservice.i: example/callee/Lservice.cc.i
+.PHONY : example/callee/Lservice.i
+
+# target to preprocess a source file
+example/callee/Lservice.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/example/callee/Lservice.cc.i
+.PHONY : example/callee/Lservice.cc.i
+
+example/callee/Lservice.s: example/callee/Lservice.cc.s
+.PHONY : example/callee/Lservice.s
+
+# target to generate assembly for a file
+example/callee/Lservice.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/example/callee/Lservice.cc.s
+.PHONY : example/callee/Lservice.cc.s
 
 src/LrpcApplication.o: src/LrpcApplication.cc.o
 .PHONY : src/LrpcApplication.o
 
 # target to build an object file
 src/LrpcApplication.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/src/LrpcApplication.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/src/LrpcApplication.cc.o
 .PHONY : src/LrpcApplication.cc.o
 
 src/LrpcApplication.i: src/LrpcApplication.cc.i
@@ -142,7 +166,7 @@ src/LrpcApplication.i: src/LrpcApplication.cc.i
 
 # target to preprocess a source file
 src/LrpcApplication.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/src/LrpcApplication.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/src/LrpcApplication.cc.i
 .PHONY : src/LrpcApplication.cc.i
 
 src/LrpcApplication.s: src/LrpcApplication.cc.s
@@ -150,7 +174,7 @@ src/LrpcApplication.s: src/LrpcApplication.cc.s
 
 # target to generate assembly for a file
 src/LrpcApplication.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/src/LrpcApplication.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/src/LrpcApplication.cc.s
 .PHONY : src/LrpcApplication.cc.s
 
 src/LrpcConfig.o: src/LrpcConfig.cc.o
@@ -158,7 +182,7 @@ src/LrpcConfig.o: src/LrpcConfig.cc.o
 
 # target to build an object file
 src/LrpcConfig.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/src/LrpcConfig.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/src/LrpcConfig.cc.o
 .PHONY : src/LrpcConfig.cc.o
 
 src/LrpcConfig.i: src/LrpcConfig.cc.i
@@ -166,7 +190,7 @@ src/LrpcConfig.i: src/LrpcConfig.cc.i
 
 # target to preprocess a source file
 src/LrpcConfig.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/src/LrpcConfig.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/src/LrpcConfig.cc.i
 .PHONY : src/LrpcConfig.cc.i
 
 src/LrpcConfig.s: src/LrpcConfig.cc.s
@@ -174,32 +198,56 @@ src/LrpcConfig.s: src/LrpcConfig.cc.s
 
 # target to generate assembly for a file
 src/LrpcConfig.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/src/LrpcConfig.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/src/LrpcConfig.cc.s
 .PHONY : src/LrpcConfig.cc.s
 
-test/configtest.o: test/configtest.cc.o
-.PHONY : test/configtest.o
+src/LrpcProvider.o: src/LrpcProvider.cc.o
+.PHONY : src/LrpcProvider.o
 
 # target to build an object file
-test/configtest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/test/configtest.cc.o
-.PHONY : test/configtest.cc.o
+src/LrpcProvider.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/src/LrpcProvider.cc.o
+.PHONY : src/LrpcProvider.cc.o
 
-test/configtest.i: test/configtest.cc.i
-.PHONY : test/configtest.i
+src/LrpcProvider.i: src/LrpcProvider.cc.i
+.PHONY : src/LrpcProvider.i
 
 # target to preprocess a source file
-test/configtest.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/test/configtest.cc.i
-.PHONY : test/configtest.cc.i
+src/LrpcProvider.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/src/LrpcProvider.cc.i
+.PHONY : src/LrpcProvider.cc.i
 
-test/configtest.s: test/configtest.cc.s
-.PHONY : test/configtest.s
+src/LrpcProvider.s: src/LrpcProvider.cc.s
+.PHONY : src/LrpcProvider.s
 
 # target to generate assembly for a file
-test/configtest.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/test/configtest.cc.s
-.PHONY : test/configtest.cc.s
+src/LrpcProvider.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/src/LrpcProvider.cc.s
+.PHONY : src/LrpcProvider.cc.s
+
+user/user.pb.o: user/user.pb.cc.o
+.PHONY : user/user.pb.o
+
+# target to build an object file
+user/user.pb.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/user/user.pb.cc.o
+.PHONY : user/user.pb.cc.o
+
+user/user.pb.i: user/user.pb.cc.i
+.PHONY : user/user.pb.i
+
+# target to preprocess a source file
+user/user.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/user/user.pb.cc.i
+.PHONY : user/user.pb.cc.i
+
+user/user.pb.s: user/user.pb.cc.s
+.PHONY : user/user.pb.s
+
+# target to generate assembly for a file
+user/user.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/user/user.pb.cc.s
+.PHONY : user/user.pb.cc.s
 
 # Help Target
 help:
@@ -209,16 +257,22 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... configtest"
+	@echo "... notifyservice_test"
+	@echo "... example/callee/Lservice.o"
+	@echo "... example/callee/Lservice.i"
+	@echo "... example/callee/Lservice.s"
 	@echo "... src/LrpcApplication.o"
 	@echo "... src/LrpcApplication.i"
 	@echo "... src/LrpcApplication.s"
 	@echo "... src/LrpcConfig.o"
 	@echo "... src/LrpcConfig.i"
 	@echo "... src/LrpcConfig.s"
-	@echo "... test/configtest.o"
-	@echo "... test/configtest.i"
-	@echo "... test/configtest.s"
+	@echo "... src/LrpcProvider.o"
+	@echo "... src/LrpcProvider.i"
+	@echo "... src/LrpcProvider.s"
+	@echo "... user/user.pb.o"
+	@echo "... user/user.pb.i"
+	@echo "... user/user.pb.s"
 .PHONY : help
 
 

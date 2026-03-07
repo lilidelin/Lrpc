@@ -3,6 +3,8 @@
 #include"../../user/user.pb.h"
 #include <google/protobuf/service.h>   // RpcController, Closure
 #include <google/protobuf/stubs/common.h> // for PROTOBUF_NAMESPACE_ID
+#include "LrpcProvider.h"
+#include "LrpcApplication.h"
 
 class UserService : public Luser::UserServiceRpc{
 public:
@@ -30,3 +32,9 @@ public:
         done->Run();
     }
 };
+int main(int argc, char** argv){
+    LrpcApplication::Init(argc, argv);
+    LrpcProvider provider;
+    provider.NotifyService(new UserService());
+    return 0;
+}

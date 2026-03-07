@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "configtest::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-configtest-c5d4bd989394bce944ef.json",
-					"name" : "configtest",
+					"id" : "notifyservice_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-notifyservice_test-835b2173a62ce71601e3.json",
+					"name" : "notifyservice_test",
 					"projectIndex" : 0
 				}
 			]

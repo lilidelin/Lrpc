@@ -14,14 +14,17 @@ endif()
 include_directories(
     ${PROTOBUF_INCLUDE_DIRS}
     ./src/include
+    ./user/user.pb.h
 )
 
 set(SOURCES
-    test/configtest.cc
     ./src/LrpcApplication.cc
     ./src/LrpcConfig.cc
+    ./src/LrpcProvider.cc
+    ./example/callee/Lservice.cc
+    ./user/user.pb.cc
 )
 
-add_executable(configtest ${SOURCES})
+add_executable(notifyservice_test ${SOURCES})
 
-target_link_libraries(configtest ${PROTOBUF_LIBRARIES})
+target_link_libraries(notifyservice_test ${PROTOBUF_LIBRARIES})

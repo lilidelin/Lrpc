@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/notifyservice_test.dir/src/LrpcApplication.cc.o CMakeFiles/notifyservice_test.dir/src/LrpcConfig.cc.o CMakeFiles/notifyservice_test.dir/src/LrpcProvider.cc.o CMakeFiles/notifyservice_test.dir/example/callee/Lservice.cc.o CMakeFiles/notifyservice_test.dir/user/user.pb.cc.o -o notifyservice_test  /usr/lib/x86_64-linux-gnu/libprotobuf.so 

@@ -5,7 +5,7 @@
 
 class LrpcApplication{
 public:
-    static void Init(int argc, char* argv[]);
+    static void Init(int argc, char* argv[]);//用来加载配置文件
     static LrpcApplication& GetInstance();
     static void deleteInstance();
     static LrpcConfig& GetConfig();

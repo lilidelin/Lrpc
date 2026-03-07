@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/projects/Lrpc/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/configtest.dir/all
+all: CMakeFiles/notifyservice_test.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/configtest.dir/clean
+clean: CMakeFiles/notifyservice_test.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/configtest.dir
+# Target rules for target CMakeFiles/notifyservice_test.dir
 
 # All Build rule for target.
-CMakeFiles/configtest.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/projects/Lrpc/build/CMakeFiles --progress-num=1,2,3,4 "Built target configtest"
-.PHONY : CMakeFiles/configtest.dir/all
+CMakeFiles/notifyservice_test.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/projects/Lrpc/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target notifyservice_test"
+.PHONY : CMakeFiles/notifyservice_test.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/configtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/projects/Lrpc/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/configtest.dir/all
+CMakeFiles/notifyservice_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/projects/Lrpc/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/notifyservice_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/projects/Lrpc/build/CMakeFiles 0
-.PHONY : CMakeFiles/configtest.dir/rule
+.PHONY : CMakeFiles/notifyservice_test.dir/rule
 
 # Convenience name for target.
-configtest: CMakeFiles/configtest.dir/rule
-.PHONY : configtest
+notifyservice_test: CMakeFiles/notifyservice_test.dir/rule
+.PHONY : notifyservice_test
 
 # clean rule for target.
-CMakeFiles/configtest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/configtest.dir/build.make CMakeFiles/configtest.dir/clean
-.PHONY : CMakeFiles/configtest.dir/clean
+CMakeFiles/notifyservice_test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/notifyservice_test.dir/build.make CMakeFiles/notifyservice_test.dir/clean
+.PHONY : CMakeFiles/notifyservice_test.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
