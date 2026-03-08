@@ -1,4 +1,4 @@
-CMakeFiles/notifyservice_test.dir/user/user.pb.cc.o: \
+CMakeFiles/zookeeper_test.dir/user/user.pb.cc.o: \
  /home/projects/Lrpc/user/user.pb.cc /usr/include/stdc-predef.h \
  /home/projects/Lrpc/user/user.pb.h /usr/include/c++/11/limits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

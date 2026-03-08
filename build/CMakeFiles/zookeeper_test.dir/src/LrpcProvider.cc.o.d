@@ -1,4 +1,4 @@
-CMakeFiles/notifyservice_test.dir/src/LrpcProvider.cc.o: \
+CMakeFiles/zookeeper_test.dir/src/LrpcProvider.cc.o: \
  /home/projects/Lrpc/src/LrpcProvider.cc /usr/include/stdc-predef.h \
  /home/projects/Lrpc/./src/include/LrpcProvider.h \
  /usr/include/c++/11/unordered_map /usr/include/c++/11/type_traits \
@@ -238,4 +238,28 @@ CMakeFiles/notifyservice_test.dir/src/LrpcProvider.cc.o: \
  /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
- /usr/include/google/protobuf/stubs/once.h
+ /usr/include/google/protobuf/stubs/once.h \
+ /home/projects/Lrpc/./src/include/zookeeperutil.h \
+ /usr/include/zookeeper/zookeeper.h \
+ /usr/include/x86_64-linux-gnu/sys/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/x86_64-linux-gnu/bits/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/zookeeper/proto.h \
+ /usr/include/zookeeper/zookeeper_version.h \
+ /usr/include/zookeeper/recordio.h \
+ /usr/include/zookeeper/zookeeper.jute.h \
+ /home/projects/Lrpc/./src/include/LrpcApplication.h \
+ /home/projects/Lrpc/./src/include/LrpcConfig.h

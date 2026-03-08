@@ -23,8 +23,10 @@ set(SOURCES
     ./src/LrpcProvider.cc
     ./example/callee/Lservice.cc
     ./user/user.pb.cc
+    ./src/zookeeperutil.cc
 )
 
-add_executable(notifyservice_test ${SOURCES})
+add_executable(zookeeper_test ${SOURCES})
 
-target_link_libraries(notifyservice_test ${PROTOBUF_LIBRARIES})
+target_link_libraries(zookeeper_test ${PROTOBUF_LIBRARIES})
+target_link_libraries(zookeeper_test zookeeper_mt)

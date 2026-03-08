@@ -11,6 +11,7 @@ public:
     LrpcProvider() = default;
     ~LrpcProvider() = default;
     void NotifyService(google::protobuf::Service* service);
+    void ZKtest();
 private:
     struct ServiceInfo{
         google::protobuf::Service* service;

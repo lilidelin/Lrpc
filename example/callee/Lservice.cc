@@ -5,6 +5,9 @@
 #include <google/protobuf/stubs/common.h> // for PROTOBUF_NAMESPACE_ID
 #include "LrpcProvider.h"
 #include "LrpcApplication.h"
+#include "zookeeperutil.h"
+
+
 
 class UserService : public Luser::UserServiceRpc{
 public:
@@ -36,5 +39,8 @@ int main(int argc, char** argv){
     LrpcApplication::Init(argc, argv);
     LrpcProvider provider;
     provider.NotifyService(new UserService());
+    ZooClient zkclient;
+    zkclient.Start();
+    provider.ZKtest();
     return 0;
 }
