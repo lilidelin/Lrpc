@@ -39,8 +39,6 @@ int main(int argc, char** argv){
     LrpcApplication::Init(argc, argv);
     LrpcProvider provider;
     provider.NotifyService(new UserService());
-    ZooClient zkclient;
-    zkclient.Start();
-    provider.ZKtest();
+    provider.Run();
     return 0;
 }

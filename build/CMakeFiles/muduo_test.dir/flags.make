@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/projects/Lrpc/./src/include -I/home/projects/Lrpc/./user/user.pb.h
+CXX_INCLUDES = -I/home/projects/Lrpc/./src/include -I/home/projects/Lrpc/./user
 
 CXX_FLAGS = -std=gnu++11
 

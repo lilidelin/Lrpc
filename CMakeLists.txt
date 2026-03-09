@@ -14,7 +14,7 @@ endif()
 include_directories(
     ${PROTOBUF_INCLUDE_DIRS}
     ./src/include
-    ./user/user.pb.h
+    ./user
 )
 
 set(SOURCES
@@ -24,9 +24,11 @@ set(SOURCES
     ./example/callee/Lservice.cc
     ./user/user.pb.cc
     ./src/zookeeperutil.cc
+    ./src/LrpcHeader.pb.cc
 )
 
-add_executable(zookeeper_test ${SOURCES})
+add_executable(muduo_test ${SOURCES})
 
-target_link_libraries(zookeeper_test ${PROTOBUF_LIBRARIES})
-target_link_libraries(zookeeper_test zookeeper_mt)
+target_link_libraries(muduo_test ${PROTOBUF_LIBRARIES})
+target_link_libraries(muduo_test zookeeper_mt)
+target_link_libraries(muduo_test muduo_net muduo_base pthread)

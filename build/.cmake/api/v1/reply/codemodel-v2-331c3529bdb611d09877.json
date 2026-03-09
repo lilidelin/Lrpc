@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "zookeeper_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-zookeeper_test-b72317b61df5cb126ea0.json",
-					"name" : "zookeeper_test",
+					"id" : "muduo_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-muduo_test-518d15a329e01601a2e0.json",
+					"name" : "muduo_test",
 					"projectIndex" : 0
 				}
 			]

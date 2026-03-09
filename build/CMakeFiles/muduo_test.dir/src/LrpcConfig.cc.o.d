@@ -1,4 +1,4 @@
-CMakeFiles/zookeeper_test.dir/src/LrpcConfig.cc.o: \
+CMakeFiles/muduo_test.dir/src/LrpcConfig.cc.o: \
  /home/projects/Lrpc/src/LrpcConfig.cc /usr/include/stdc-predef.h \
  /home/projects/Lrpc/./src/include/LrpcConfig.h \
  /usr/include/c++/11/unordered_map /usr/include/c++/11/type_traits \

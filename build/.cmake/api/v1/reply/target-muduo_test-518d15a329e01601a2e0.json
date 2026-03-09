@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "zookeeper_test"
+			"path" : "muduo_test"
 		}
 	],
 	"backtrace" : 1,
@@ -26,19 +26,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 29,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 31,
+				"line" : 30,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
 				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 33,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 34,
 				"parent" : 0
 			},
 			{
@@ -61,12 +67,12 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"path" : "/home/projects/Lrpc/./src/include"
 				},
 				{
-					"backtrace" : 4,
-					"path" : "/home/projects/Lrpc/./user/user.pb.h"
+					"backtrace" : 5,
+					"path" : "/home/projects/Lrpc/./user"
 				}
 			],
 			"language" : "CXX",
@@ -85,11 +91,12 @@
 				2,
 				3,
 				4,
-				5
+				5,
+				6
 			]
 		}
 	],
-	"id" : "zookeeper_test::@6890427a1f51a3e7e1df",
+	"id" : "muduo_test::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -107,12 +114,27 @@
 				"backtrace" : 3,
 				"fragment" : "-lzookeeper_mt",
 				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lmuduo_net",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lmuduo_base",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "zookeeper_test",
-	"nameOnDisk" : "zookeeper_test",
+	"name" : "muduo_test",
+	"nameOnDisk" : "muduo_test",
 	"paths" : 
 	{
 		"build" : ".",
@@ -129,7 +151,8 @@
 				2,
 				3,
 				4,
-				5
+				5,
+				6
 			]
 		}
 	],
@@ -169,6 +192,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/zookeeperutil.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/LrpcHeader.pb.cc",
 			"sourceGroupIndex" : 0
 		}
 	],
