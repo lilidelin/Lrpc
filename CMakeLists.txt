@@ -21,14 +21,16 @@ set(SOURCES
     ./src/LrpcApplication.cc
     ./src/LrpcConfig.cc
     ./src/LrpcProvider.cc
-    ./example/callee/Lservice.cc
     ./user/user.pb.cc
     ./src/zookeeperutil.cc
     ./src/LrpcHeader.pb.cc
+    ./src/LrpcChannel.cc
+    ./example/caller/LClient.cc
+    ./src/LrpcController.cc
 )
 
-add_executable(muduo_test ${SOURCES})
+add_executable(client_test ${SOURCES})
 
-target_link_libraries(muduo_test ${PROTOBUF_LIBRARIES})
-target_link_libraries(muduo_test zookeeper_mt)
-target_link_libraries(muduo_test muduo_net muduo_base pthread)
+target_link_libraries(client_test ${PROTOBUF_LIBRARIES})
+target_link_libraries(client_test zookeeper_mt)
+target_link_libraries(client_test muduo_net muduo_base pthread)

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/projects/Lrpc
+CMAKE_SOURCE_DIR = //home/projects/Lrpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/projects/Lrpc/build
+CMAKE_BINARY_DIR = //home/projects/Lrpc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/projects/Lrpc/build/CMakeFiles /home/projects/Lrpc/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start //home/projects/Lrpc/build/CMakeFiles //home/projects/Lrpc/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/projects/Lrpc/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start //home/projects/Lrpc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,48 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named muduo_test
+# Target rules for targets named client_test
 
 # Build rule for target.
-muduo_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo_test
-.PHONY : muduo_test
+client_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client_test
+.PHONY : client_test
 
 # fast build rule for target.
-muduo_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/build
-.PHONY : muduo_test/fast
+client_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/build
+.PHONY : client_test/fast
 
-example/callee/Lservice.o: example/callee/Lservice.cc.o
-.PHONY : example/callee/Lservice.o
+example/caller/LClient.o: example/caller/LClient.cc.o
+.PHONY : example/caller/LClient.o
 
 # target to build an object file
-example/callee/Lservice.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/example/callee/Lservice.cc.o
-.PHONY : example/callee/Lservice.cc.o
+example/caller/LClient.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/example/caller/LClient.cc.o
+.PHONY : example/caller/LClient.cc.o
 
-example/callee/Lservice.i: example/callee/Lservice.cc.i
-.PHONY : example/callee/Lservice.i
+example/caller/LClient.i: example/caller/LClient.cc.i
+.PHONY : example/caller/LClient.i
 
 # target to preprocess a source file
-example/callee/Lservice.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/example/callee/Lservice.cc.i
-.PHONY : example/callee/Lservice.cc.i
+example/caller/LClient.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/example/caller/LClient.cc.i
+.PHONY : example/caller/LClient.cc.i
 
-example/callee/Lservice.s: example/callee/Lservice.cc.s
-.PHONY : example/callee/Lservice.s
+example/caller/LClient.s: example/caller/LClient.cc.s
+.PHONY : example/caller/LClient.s
 
 # target to generate assembly for a file
-example/callee/Lservice.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/example/callee/Lservice.cc.s
-.PHONY : example/callee/Lservice.cc.s
+example/caller/LClient.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/example/caller/LClient.cc.s
+.PHONY : example/caller/LClient.cc.s
 
 src/LrpcApplication.o: src/LrpcApplication.cc.o
 .PHONY : src/LrpcApplication.o
 
 # target to build an object file
 src/LrpcApplication.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/src/LrpcApplication.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcApplication.cc.o
 .PHONY : src/LrpcApplication.cc.o
 
 src/LrpcApplication.i: src/LrpcApplication.cc.i
@@ -166,7 +166,7 @@ src/LrpcApplication.i: src/LrpcApplication.cc.i
 
 # target to preprocess a source file
 src/LrpcApplication.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/src/LrpcApplication.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcApplication.cc.i
 .PHONY : src/LrpcApplication.cc.i
 
 src/LrpcApplication.s: src/LrpcApplication.cc.s
@@ -174,15 +174,39 @@ src/LrpcApplication.s: src/LrpcApplication.cc.s
 
 # target to generate assembly for a file
 src/LrpcApplication.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/src/LrpcApplication.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcApplication.cc.s
 .PHONY : src/LrpcApplication.cc.s
+
+src/LrpcChannel.o: src/LrpcChannel.cc.o
+.PHONY : src/LrpcChannel.o
+
+# target to build an object file
+src/LrpcChannel.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcChannel.cc.o
+.PHONY : src/LrpcChannel.cc.o
+
+src/LrpcChannel.i: src/LrpcChannel.cc.i
+.PHONY : src/LrpcChannel.i
+
+# target to preprocess a source file
+src/LrpcChannel.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcChannel.cc.i
+.PHONY : src/LrpcChannel.cc.i
+
+src/LrpcChannel.s: src/LrpcChannel.cc.s
+.PHONY : src/LrpcChannel.s
+
+# target to generate assembly for a file
+src/LrpcChannel.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcChannel.cc.s
+.PHONY : src/LrpcChannel.cc.s
 
 src/LrpcConfig.o: src/LrpcConfig.cc.o
 .PHONY : src/LrpcConfig.o
 
 # target to build an object file
 src/LrpcConfig.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/src/LrpcConfig.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcConfig.cc.o
 .PHONY : src/LrpcConfig.cc.o
 
 src/LrpcConfig.i: src/LrpcConfig.cc.i
@@ -190,7 +214,7 @@ src/LrpcConfig.i: src/LrpcConfig.cc.i
 
 # target to preprocess a source file
 src/LrpcConfig.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/src/LrpcConfig.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcConfig.cc.i
 .PHONY : src/LrpcConfig.cc.i
 
 src/LrpcConfig.s: src/LrpcConfig.cc.s
@@ -198,15 +222,39 @@ src/LrpcConfig.s: src/LrpcConfig.cc.s
 
 # target to generate assembly for a file
 src/LrpcConfig.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/src/LrpcConfig.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcConfig.cc.s
 .PHONY : src/LrpcConfig.cc.s
+
+src/LrpcController.o: src/LrpcController.cc.o
+.PHONY : src/LrpcController.o
+
+# target to build an object file
+src/LrpcController.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcController.cc.o
+.PHONY : src/LrpcController.cc.o
+
+src/LrpcController.i: src/LrpcController.cc.i
+.PHONY : src/LrpcController.i
+
+# target to preprocess a source file
+src/LrpcController.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcController.cc.i
+.PHONY : src/LrpcController.cc.i
+
+src/LrpcController.s: src/LrpcController.cc.s
+.PHONY : src/LrpcController.s
+
+# target to generate assembly for a file
+src/LrpcController.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcController.cc.s
+.PHONY : src/LrpcController.cc.s
 
 src/LrpcHeader.pb.o: src/LrpcHeader.pb.cc.o
 .PHONY : src/LrpcHeader.pb.o
 
 # target to build an object file
 src/LrpcHeader.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/src/LrpcHeader.pb.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.o
 .PHONY : src/LrpcHeader.pb.cc.o
 
 src/LrpcHeader.pb.i: src/LrpcHeader.pb.cc.i
@@ -214,7 +262,7 @@ src/LrpcHeader.pb.i: src/LrpcHeader.pb.cc.i
 
 # target to preprocess a source file
 src/LrpcHeader.pb.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/src/LrpcHeader.pb.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.i
 .PHONY : src/LrpcHeader.pb.cc.i
 
 src/LrpcHeader.pb.s: src/LrpcHeader.pb.cc.s
@@ -222,7 +270,7 @@ src/LrpcHeader.pb.s: src/LrpcHeader.pb.cc.s
 
 # target to generate assembly for a file
 src/LrpcHeader.pb.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/src/LrpcHeader.pb.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.s
 .PHONY : src/LrpcHeader.pb.cc.s
 
 src/LrpcProvider.o: src/LrpcProvider.cc.o
@@ -230,7 +278,7 @@ src/LrpcProvider.o: src/LrpcProvider.cc.o
 
 # target to build an object file
 src/LrpcProvider.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/src/LrpcProvider.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcProvider.cc.o
 .PHONY : src/LrpcProvider.cc.o
 
 src/LrpcProvider.i: src/LrpcProvider.cc.i
@@ -238,7 +286,7 @@ src/LrpcProvider.i: src/LrpcProvider.cc.i
 
 # target to preprocess a source file
 src/LrpcProvider.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/src/LrpcProvider.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcProvider.cc.i
 .PHONY : src/LrpcProvider.cc.i
 
 src/LrpcProvider.s: src/LrpcProvider.cc.s
@@ -246,7 +294,7 @@ src/LrpcProvider.s: src/LrpcProvider.cc.s
 
 # target to generate assembly for a file
 src/LrpcProvider.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/src/LrpcProvider.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcProvider.cc.s
 .PHONY : src/LrpcProvider.cc.s
 
 src/zookeeperutil.o: src/zookeeperutil.cc.o
@@ -254,7 +302,7 @@ src/zookeeperutil.o: src/zookeeperutil.cc.o
 
 # target to build an object file
 src/zookeeperutil.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/src/zookeeperutil.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/zookeeperutil.cc.o
 .PHONY : src/zookeeperutil.cc.o
 
 src/zookeeperutil.i: src/zookeeperutil.cc.i
@@ -262,7 +310,7 @@ src/zookeeperutil.i: src/zookeeperutil.cc.i
 
 # target to preprocess a source file
 src/zookeeperutil.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/src/zookeeperutil.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/zookeeperutil.cc.i
 .PHONY : src/zookeeperutil.cc.i
 
 src/zookeeperutil.s: src/zookeeperutil.cc.s
@@ -270,7 +318,7 @@ src/zookeeperutil.s: src/zookeeperutil.cc.s
 
 # target to generate assembly for a file
 src/zookeeperutil.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/src/zookeeperutil.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/zookeeperutil.cc.s
 .PHONY : src/zookeeperutil.cc.s
 
 user/user.pb.o: user/user.pb.cc.o
@@ -278,7 +326,7 @@ user/user.pb.o: user/user.pb.cc.o
 
 # target to build an object file
 user/user.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/user/user.pb.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/user/user.pb.cc.o
 .PHONY : user/user.pb.cc.o
 
 user/user.pb.i: user/user.pb.cc.i
@@ -286,7 +334,7 @@ user/user.pb.i: user/user.pb.cc.i
 
 # target to preprocess a source file
 user/user.pb.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/user/user.pb.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/user/user.pb.cc.i
 .PHONY : user/user.pb.cc.i
 
 user/user.pb.s: user/user.pb.cc.s
@@ -294,7 +342,7 @@ user/user.pb.s: user/user.pb.cc.s
 
 # target to generate assembly for a file
 user/user.pb.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/user/user.pb.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/user/user.pb.cc.s
 .PHONY : user/user.pb.cc.s
 
 # Help Target
@@ -305,16 +353,22 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... muduo_test"
-	@echo "... example/callee/Lservice.o"
-	@echo "... example/callee/Lservice.i"
-	@echo "... example/callee/Lservice.s"
+	@echo "... client_test"
+	@echo "... example/caller/LClient.o"
+	@echo "... example/caller/LClient.i"
+	@echo "... example/caller/LClient.s"
 	@echo "... src/LrpcApplication.o"
 	@echo "... src/LrpcApplication.i"
 	@echo "... src/LrpcApplication.s"
+	@echo "... src/LrpcChannel.o"
+	@echo "... src/LrpcChannel.i"
+	@echo "... src/LrpcChannel.s"
 	@echo "... src/LrpcConfig.o"
 	@echo "... src/LrpcConfig.i"
 	@echo "... src/LrpcConfig.s"
+	@echo "... src/LrpcController.o"
+	@echo "... src/LrpcController.i"
+	@echo "... src/LrpcController.s"
 	@echo "... src/LrpcHeader.pb.o"
 	@echo "... src/LrpcHeader.pb.i"
 	@echo "... src/LrpcHeader.pb.s"
