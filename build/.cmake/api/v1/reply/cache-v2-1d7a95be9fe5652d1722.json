@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "//home/projects/Lrpc/build"
+			"value" : "/home/projects/Lrpc/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -619,7 +619,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "//home/projects/Lrpc"
+			"value" : "/home/projects/Lrpc"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1295,7 +1295,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "//home/projects/Lrpc/build"
+			"value" : "/home/projects/Lrpc/build"
 		},
 		{
 			"name" : "protobuf_demo_IS_TOP_LEVEL",
@@ -1319,7 +1319,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "//home/projects/Lrpc"
+			"value" : "/home/projects/Lrpc"
 		}
 	],
 	"kind" : "cache",

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = //home/projects/Lrpc
+CMAKE_SOURCE_DIR = /home/projects/Lrpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = //home/projects/Lrpc/build
+CMAKE_BINARY_DIR = /home/projects/Lrpc/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/client_test.dir/depend.make
@@ -72,128 +72,128 @@ include CMakeFiles/client_test.dir/flags.make
 CMakeFiles/client_test.dir/src/LrpcApplication.cc.o: CMakeFiles/client_test.dir/flags.make
 CMakeFiles/client_test.dir/src/LrpcApplication.cc.o: ../src/LrpcApplication.cc
 CMakeFiles/client_test.dir/src/LrpcApplication.cc.o: CMakeFiles/client_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=//home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/client_test.dir/src/LrpcApplication.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/src/LrpcApplication.cc.o -MF CMakeFiles/client_test.dir/src/LrpcApplication.cc.o.d -o CMakeFiles/client_test.dir/src/LrpcApplication.cc.o -c //home/projects/Lrpc/src/LrpcApplication.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/client_test.dir/src/LrpcApplication.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/src/LrpcApplication.cc.o -MF CMakeFiles/client_test.dir/src/LrpcApplication.cc.o.d -o CMakeFiles/client_test.dir/src/LrpcApplication.cc.o -c /home/projects/Lrpc/src/LrpcApplication.cc
 
 CMakeFiles/client_test.dir/src/LrpcApplication.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client_test.dir/src/LrpcApplication.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E //home/projects/Lrpc/src/LrpcApplication.cc > CMakeFiles/client_test.dir/src/LrpcApplication.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/projects/Lrpc/src/LrpcApplication.cc > CMakeFiles/client_test.dir/src/LrpcApplication.cc.i
 
 CMakeFiles/client_test.dir/src/LrpcApplication.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client_test.dir/src/LrpcApplication.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S //home/projects/Lrpc/src/LrpcApplication.cc -o CMakeFiles/client_test.dir/src/LrpcApplication.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/projects/Lrpc/src/LrpcApplication.cc -o CMakeFiles/client_test.dir/src/LrpcApplication.cc.s
 
 CMakeFiles/client_test.dir/src/LrpcConfig.cc.o: CMakeFiles/client_test.dir/flags.make
 CMakeFiles/client_test.dir/src/LrpcConfig.cc.o: ../src/LrpcConfig.cc
 CMakeFiles/client_test.dir/src/LrpcConfig.cc.o: CMakeFiles/client_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=//home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/client_test.dir/src/LrpcConfig.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/src/LrpcConfig.cc.o -MF CMakeFiles/client_test.dir/src/LrpcConfig.cc.o.d -o CMakeFiles/client_test.dir/src/LrpcConfig.cc.o -c //home/projects/Lrpc/src/LrpcConfig.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/client_test.dir/src/LrpcConfig.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/src/LrpcConfig.cc.o -MF CMakeFiles/client_test.dir/src/LrpcConfig.cc.o.d -o CMakeFiles/client_test.dir/src/LrpcConfig.cc.o -c /home/projects/Lrpc/src/LrpcConfig.cc
 
 CMakeFiles/client_test.dir/src/LrpcConfig.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client_test.dir/src/LrpcConfig.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E //home/projects/Lrpc/src/LrpcConfig.cc > CMakeFiles/client_test.dir/src/LrpcConfig.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/projects/Lrpc/src/LrpcConfig.cc > CMakeFiles/client_test.dir/src/LrpcConfig.cc.i
 
 CMakeFiles/client_test.dir/src/LrpcConfig.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client_test.dir/src/LrpcConfig.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S //home/projects/Lrpc/src/LrpcConfig.cc -o CMakeFiles/client_test.dir/src/LrpcConfig.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/projects/Lrpc/src/LrpcConfig.cc -o CMakeFiles/client_test.dir/src/LrpcConfig.cc.s
 
 CMakeFiles/client_test.dir/src/LrpcProvider.cc.o: CMakeFiles/client_test.dir/flags.make
 CMakeFiles/client_test.dir/src/LrpcProvider.cc.o: ../src/LrpcProvider.cc
 CMakeFiles/client_test.dir/src/LrpcProvider.cc.o: CMakeFiles/client_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=//home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/client_test.dir/src/LrpcProvider.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/src/LrpcProvider.cc.o -MF CMakeFiles/client_test.dir/src/LrpcProvider.cc.o.d -o CMakeFiles/client_test.dir/src/LrpcProvider.cc.o -c //home/projects/Lrpc/src/LrpcProvider.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/client_test.dir/src/LrpcProvider.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/src/LrpcProvider.cc.o -MF CMakeFiles/client_test.dir/src/LrpcProvider.cc.o.d -o CMakeFiles/client_test.dir/src/LrpcProvider.cc.o -c /home/projects/Lrpc/src/LrpcProvider.cc
 
 CMakeFiles/client_test.dir/src/LrpcProvider.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client_test.dir/src/LrpcProvider.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E //home/projects/Lrpc/src/LrpcProvider.cc > CMakeFiles/client_test.dir/src/LrpcProvider.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/projects/Lrpc/src/LrpcProvider.cc > CMakeFiles/client_test.dir/src/LrpcProvider.cc.i
 
 CMakeFiles/client_test.dir/src/LrpcProvider.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client_test.dir/src/LrpcProvider.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S //home/projects/Lrpc/src/LrpcProvider.cc -o CMakeFiles/client_test.dir/src/LrpcProvider.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/projects/Lrpc/src/LrpcProvider.cc -o CMakeFiles/client_test.dir/src/LrpcProvider.cc.s
 
 CMakeFiles/client_test.dir/user/user.pb.cc.o: CMakeFiles/client_test.dir/flags.make
 CMakeFiles/client_test.dir/user/user.pb.cc.o: ../user/user.pb.cc
 CMakeFiles/client_test.dir/user/user.pb.cc.o: CMakeFiles/client_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=//home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/client_test.dir/user/user.pb.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/user/user.pb.cc.o -MF CMakeFiles/client_test.dir/user/user.pb.cc.o.d -o CMakeFiles/client_test.dir/user/user.pb.cc.o -c //home/projects/Lrpc/user/user.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/client_test.dir/user/user.pb.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/user/user.pb.cc.o -MF CMakeFiles/client_test.dir/user/user.pb.cc.o.d -o CMakeFiles/client_test.dir/user/user.pb.cc.o -c /home/projects/Lrpc/user/user.pb.cc
 
 CMakeFiles/client_test.dir/user/user.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client_test.dir/user/user.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E //home/projects/Lrpc/user/user.pb.cc > CMakeFiles/client_test.dir/user/user.pb.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/projects/Lrpc/user/user.pb.cc > CMakeFiles/client_test.dir/user/user.pb.cc.i
 
 CMakeFiles/client_test.dir/user/user.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client_test.dir/user/user.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S //home/projects/Lrpc/user/user.pb.cc -o CMakeFiles/client_test.dir/user/user.pb.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/projects/Lrpc/user/user.pb.cc -o CMakeFiles/client_test.dir/user/user.pb.cc.s
 
 CMakeFiles/client_test.dir/src/zookeeperutil.cc.o: CMakeFiles/client_test.dir/flags.make
 CMakeFiles/client_test.dir/src/zookeeperutil.cc.o: ../src/zookeeperutil.cc
 CMakeFiles/client_test.dir/src/zookeeperutil.cc.o: CMakeFiles/client_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=//home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/client_test.dir/src/zookeeperutil.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/src/zookeeperutil.cc.o -MF CMakeFiles/client_test.dir/src/zookeeperutil.cc.o.d -o CMakeFiles/client_test.dir/src/zookeeperutil.cc.o -c //home/projects/Lrpc/src/zookeeperutil.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/client_test.dir/src/zookeeperutil.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/src/zookeeperutil.cc.o -MF CMakeFiles/client_test.dir/src/zookeeperutil.cc.o.d -o CMakeFiles/client_test.dir/src/zookeeperutil.cc.o -c /home/projects/Lrpc/src/zookeeperutil.cc
 
 CMakeFiles/client_test.dir/src/zookeeperutil.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client_test.dir/src/zookeeperutil.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E //home/projects/Lrpc/src/zookeeperutil.cc > CMakeFiles/client_test.dir/src/zookeeperutil.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/projects/Lrpc/src/zookeeperutil.cc > CMakeFiles/client_test.dir/src/zookeeperutil.cc.i
 
 CMakeFiles/client_test.dir/src/zookeeperutil.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client_test.dir/src/zookeeperutil.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S //home/projects/Lrpc/src/zookeeperutil.cc -o CMakeFiles/client_test.dir/src/zookeeperutil.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/projects/Lrpc/src/zookeeperutil.cc -o CMakeFiles/client_test.dir/src/zookeeperutil.cc.s
 
 CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.o: CMakeFiles/client_test.dir/flags.make
 CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.o: ../src/LrpcHeader.pb.cc
 CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.o: CMakeFiles/client_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=//home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.o -MF CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.o.d -o CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.o -c //home/projects/Lrpc/src/LrpcHeader.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.o -MF CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.o.d -o CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.o -c /home/projects/Lrpc/src/LrpcHeader.pb.cc
 
 CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E //home/projects/Lrpc/src/LrpcHeader.pb.cc > CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/projects/Lrpc/src/LrpcHeader.pb.cc > CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.i
 
 CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S //home/projects/Lrpc/src/LrpcHeader.pb.cc -o CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/projects/Lrpc/src/LrpcHeader.pb.cc -o CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.s
 
 CMakeFiles/client_test.dir/src/LrpcChannel.cc.o: CMakeFiles/client_test.dir/flags.make
 CMakeFiles/client_test.dir/src/LrpcChannel.cc.o: ../src/LrpcChannel.cc
 CMakeFiles/client_test.dir/src/LrpcChannel.cc.o: CMakeFiles/client_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=//home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/client_test.dir/src/LrpcChannel.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/src/LrpcChannel.cc.o -MF CMakeFiles/client_test.dir/src/LrpcChannel.cc.o.d -o CMakeFiles/client_test.dir/src/LrpcChannel.cc.o -c //home/projects/Lrpc/src/LrpcChannel.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/client_test.dir/src/LrpcChannel.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/src/LrpcChannel.cc.o -MF CMakeFiles/client_test.dir/src/LrpcChannel.cc.o.d -o CMakeFiles/client_test.dir/src/LrpcChannel.cc.o -c /home/projects/Lrpc/src/LrpcChannel.cc
 
 CMakeFiles/client_test.dir/src/LrpcChannel.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client_test.dir/src/LrpcChannel.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E //home/projects/Lrpc/src/LrpcChannel.cc > CMakeFiles/client_test.dir/src/LrpcChannel.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/projects/Lrpc/src/LrpcChannel.cc > CMakeFiles/client_test.dir/src/LrpcChannel.cc.i
 
 CMakeFiles/client_test.dir/src/LrpcChannel.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client_test.dir/src/LrpcChannel.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S //home/projects/Lrpc/src/LrpcChannel.cc -o CMakeFiles/client_test.dir/src/LrpcChannel.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/projects/Lrpc/src/LrpcChannel.cc -o CMakeFiles/client_test.dir/src/LrpcChannel.cc.s
 
 CMakeFiles/client_test.dir/example/caller/LClient.cc.o: CMakeFiles/client_test.dir/flags.make
 CMakeFiles/client_test.dir/example/caller/LClient.cc.o: ../example/caller/LClient.cc
 CMakeFiles/client_test.dir/example/caller/LClient.cc.o: CMakeFiles/client_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=//home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/client_test.dir/example/caller/LClient.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/example/caller/LClient.cc.o -MF CMakeFiles/client_test.dir/example/caller/LClient.cc.o.d -o CMakeFiles/client_test.dir/example/caller/LClient.cc.o -c //home/projects/Lrpc/example/caller/LClient.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/client_test.dir/example/caller/LClient.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/example/caller/LClient.cc.o -MF CMakeFiles/client_test.dir/example/caller/LClient.cc.o.d -o CMakeFiles/client_test.dir/example/caller/LClient.cc.o -c /home/projects/Lrpc/example/caller/LClient.cc
 
 CMakeFiles/client_test.dir/example/caller/LClient.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client_test.dir/example/caller/LClient.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E //home/projects/Lrpc/example/caller/LClient.cc > CMakeFiles/client_test.dir/example/caller/LClient.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/projects/Lrpc/example/caller/LClient.cc > CMakeFiles/client_test.dir/example/caller/LClient.cc.i
 
 CMakeFiles/client_test.dir/example/caller/LClient.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client_test.dir/example/caller/LClient.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S //home/projects/Lrpc/example/caller/LClient.cc -o CMakeFiles/client_test.dir/example/caller/LClient.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/projects/Lrpc/example/caller/LClient.cc -o CMakeFiles/client_test.dir/example/caller/LClient.cc.s
 
 CMakeFiles/client_test.dir/src/LrpcController.cc.o: CMakeFiles/client_test.dir/flags.make
 CMakeFiles/client_test.dir/src/LrpcController.cc.o: ../src/LrpcController.cc
 CMakeFiles/client_test.dir/src/LrpcController.cc.o: CMakeFiles/client_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=//home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/client_test.dir/src/LrpcController.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/src/LrpcController.cc.o -MF CMakeFiles/client_test.dir/src/LrpcController.cc.o.d -o CMakeFiles/client_test.dir/src/LrpcController.cc.o -c //home/projects/Lrpc/src/LrpcController.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/client_test.dir/src/LrpcController.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client_test.dir/src/LrpcController.cc.o -MF CMakeFiles/client_test.dir/src/LrpcController.cc.o.d -o CMakeFiles/client_test.dir/src/LrpcController.cc.o -c /home/projects/Lrpc/src/LrpcController.cc
 
 CMakeFiles/client_test.dir/src/LrpcController.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client_test.dir/src/LrpcController.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E //home/projects/Lrpc/src/LrpcController.cc > CMakeFiles/client_test.dir/src/LrpcController.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/projects/Lrpc/src/LrpcController.cc > CMakeFiles/client_test.dir/src/LrpcController.cc.i
 
 CMakeFiles/client_test.dir/src/LrpcController.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client_test.dir/src/LrpcController.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S //home/projects/Lrpc/src/LrpcController.cc -o CMakeFiles/client_test.dir/src/LrpcController.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/projects/Lrpc/src/LrpcController.cc -o CMakeFiles/client_test.dir/src/LrpcController.cc.s
 
 # Object files for target client_test
 client_test_OBJECTS = \
@@ -222,7 +222,7 @@ client_test: CMakeFiles/client_test.dir/src/LrpcController.cc.o
 client_test: CMakeFiles/client_test.dir/build.make
 client_test: /usr/lib/x86_64-linux-gnu/libprotobuf.so
 client_test: CMakeFiles/client_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=//home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable client_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/projects/Lrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable client_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/client_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -234,6 +234,6 @@ CMakeFiles/client_test.dir/clean:
 .PHONY : CMakeFiles/client_test.dir/clean
 
 CMakeFiles/client_test.dir/depend:
-	cd //home/projects/Lrpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" //home/projects/Lrpc //home/projects/Lrpc //home/projects/Lrpc/build //home/projects/Lrpc/build //home/projects/Lrpc/build/CMakeFiles/client_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/projects/Lrpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/projects/Lrpc /home/projects/Lrpc /home/projects/Lrpc/build /home/projects/Lrpc/build /home/projects/Lrpc/build/CMakeFiles/client_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/client_test.dir/depend
 

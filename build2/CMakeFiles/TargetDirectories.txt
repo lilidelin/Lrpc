@@ -1,0 +1,3 @@
+/home/projects/Lrpc/build2/CMakeFiles/server_test.dir
+/home/projects/Lrpc/build2/CMakeFiles/edit_cache.dir
+/home/projects/Lrpc/build2/CMakeFiles/rebuild_cache.dir

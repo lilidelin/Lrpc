@@ -773,8 +773,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "//home/projects/Lrpc/build",
-		"source" : "//home/projects/Lrpc"
+		"build" : "/home/projects/Lrpc/build",
+		"source" : "/home/projects/Lrpc"
 	},
 	"version" : 
 	{

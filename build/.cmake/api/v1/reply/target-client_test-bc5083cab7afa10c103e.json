@@ -68,11 +68,11 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "//home/projects/Lrpc/./src/include"
+					"path" : "/home/projects/Lrpc/./src/include"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "//home/projects/Lrpc/./user"
+					"path" : "/home/projects/Lrpc/./user"
 				}
 			],
 			"language" : "CXX",

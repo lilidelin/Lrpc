@@ -1,6 +1,6 @@
 CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.o: \
- //home/projects/Lrpc/src/LrpcHeader.pb.cc /usr/include/stdc-predef.h \
- //home/projects/Lrpc/./src/include/LrpcHeader.pb.h \
+ /home/projects/Lrpc/src/LrpcHeader.pb.cc /usr/include/stdc-predef.h \
+ /home/projects/Lrpc/./src/include/LrpcHeader.pb.h \
  /usr/include/c++/11/limits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

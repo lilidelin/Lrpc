@@ -1,6 +1,6 @@
 CMakeFiles/client_test.dir/src/LrpcController.cc.o: \
- //home/projects/Lrpc/src/LrpcController.cc /usr/include/stdc-predef.h \
- //home/projects/Lrpc/./src/include/LrpcController.h \
+ /home/projects/Lrpc/src/LrpcController.cc /usr/include/stdc-predef.h \
+ /home/projects/Lrpc/./src/include/LrpcController.h \
  /usr/include/google/protobuf/service.h /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

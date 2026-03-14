@@ -1,8 +1,7 @@
 CMakeFiles/client_test.dir/example/caller/LClient.cc.o: \
- //home/projects/Lrpc/example/caller/LClient.cc \
- /usr/include/stdc-predef.h \
- //home/projects/Lrpc/./src/include/LrpcApplication.h \
- //home/projects/Lrpc/./src/include/LrpcConfig.h \
+ /home/projects/Lrpc/example/caller/LClient.cc /usr/include/stdc-predef.h \
+ /home/projects/Lrpc/./src/include/LrpcApplication.h \
+ /home/projects/Lrpc/./src/include/LrpcConfig.h \
  /usr/include/c++/11/unordered_map /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -148,7 +147,7 @@ CMakeFiles/client_test.dir/example/caller/LClient.cc.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
  /usr/include/c++/11/stdexcept /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
- //home/projects/Lrpc/example/caller/../../user/user.pb.h \
+ /home/projects/Lrpc/example/caller/../../user/user.pb.h \
  /usr/include/google/protobuf/port_def.inc \
  /usr/include/google/protobuf/port_undef.inc \
  /usr/include/google/protobuf/io/coded_stream.h /usr/include/assert.h \
@@ -278,9 +277,9 @@ CMakeFiles/client_test.dir/example/caller/LClient.cc.o: \
  /usr/include/google/protobuf/message.h \
  /usr/include/google/protobuf/extension_set.h /usr/include/c++/11/cassert \
  /usr/include/google/protobuf/service.h \
- //home/projects/Lrpc/./src/include/LrpcController.h \
- //home/projects/Lrpc/./src/include/LrpcChannel.h \
- //home/projects/Lrpc/./src/include/zookeeperutil.h \
+ /home/projects/Lrpc/./src/include/LrpcController.h \
+ /home/projects/Lrpc/./src/include/LrpcChannel.h \
+ /home/projects/Lrpc/./src/include/zookeeperutil.h \
  /usr/include/zookeeper/zookeeper.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
