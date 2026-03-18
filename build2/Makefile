@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named server_test
+# Target rules for targets named server
 
 # Build rule for target.
-server_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_test
-.PHONY : server_test
+server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server
+.PHONY : server
 
 # fast build rule for target.
-server_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/build
-.PHONY : server_test/fast
+server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+.PHONY : server/fast
 
 example/callee/Lservice.o: example/callee/Lservice.cc.o
 .PHONY : example/callee/Lservice.o
 
 # target to build an object file
 example/callee/Lservice.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/example/callee/Lservice.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/example/callee/Lservice.cc.o
 .PHONY : example/callee/Lservice.cc.o
 
 example/callee/Lservice.i: example/callee/Lservice.cc.i
@@ -142,7 +142,7 @@ example/callee/Lservice.i: example/callee/Lservice.cc.i
 
 # target to preprocess a source file
 example/callee/Lservice.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/example/callee/Lservice.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/example/callee/Lservice.cc.i
 .PHONY : example/callee/Lservice.cc.i
 
 example/callee/Lservice.s: example/callee/Lservice.cc.s
@@ -150,7 +150,7 @@ example/callee/Lservice.s: example/callee/Lservice.cc.s
 
 # target to generate assembly for a file
 example/callee/Lservice.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/example/callee/Lservice.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/example/callee/Lservice.cc.s
 .PHONY : example/callee/Lservice.cc.s
 
 src/LrpcApplication.o: src/LrpcApplication.cc.o
@@ -158,7 +158,7 @@ src/LrpcApplication.o: src/LrpcApplication.cc.o
 
 # target to build an object file
 src/LrpcApplication.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcApplication.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcApplication.cc.o
 .PHONY : src/LrpcApplication.cc.o
 
 src/LrpcApplication.i: src/LrpcApplication.cc.i
@@ -166,7 +166,7 @@ src/LrpcApplication.i: src/LrpcApplication.cc.i
 
 # target to preprocess a source file
 src/LrpcApplication.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcApplication.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcApplication.cc.i
 .PHONY : src/LrpcApplication.cc.i
 
 src/LrpcApplication.s: src/LrpcApplication.cc.s
@@ -174,7 +174,7 @@ src/LrpcApplication.s: src/LrpcApplication.cc.s
 
 # target to generate assembly for a file
 src/LrpcApplication.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcApplication.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcApplication.cc.s
 .PHONY : src/LrpcApplication.cc.s
 
 src/LrpcChannel.o: src/LrpcChannel.cc.o
@@ -182,7 +182,7 @@ src/LrpcChannel.o: src/LrpcChannel.cc.o
 
 # target to build an object file
 src/LrpcChannel.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcChannel.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcChannel.cc.o
 .PHONY : src/LrpcChannel.cc.o
 
 src/LrpcChannel.i: src/LrpcChannel.cc.i
@@ -190,7 +190,7 @@ src/LrpcChannel.i: src/LrpcChannel.cc.i
 
 # target to preprocess a source file
 src/LrpcChannel.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcChannel.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcChannel.cc.i
 .PHONY : src/LrpcChannel.cc.i
 
 src/LrpcChannel.s: src/LrpcChannel.cc.s
@@ -198,7 +198,7 @@ src/LrpcChannel.s: src/LrpcChannel.cc.s
 
 # target to generate assembly for a file
 src/LrpcChannel.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcChannel.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcChannel.cc.s
 .PHONY : src/LrpcChannel.cc.s
 
 src/LrpcConfig.o: src/LrpcConfig.cc.o
@@ -206,7 +206,7 @@ src/LrpcConfig.o: src/LrpcConfig.cc.o
 
 # target to build an object file
 src/LrpcConfig.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcConfig.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcConfig.cc.o
 .PHONY : src/LrpcConfig.cc.o
 
 src/LrpcConfig.i: src/LrpcConfig.cc.i
@@ -214,7 +214,7 @@ src/LrpcConfig.i: src/LrpcConfig.cc.i
 
 # target to preprocess a source file
 src/LrpcConfig.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcConfig.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcConfig.cc.i
 .PHONY : src/LrpcConfig.cc.i
 
 src/LrpcConfig.s: src/LrpcConfig.cc.s
@@ -222,7 +222,7 @@ src/LrpcConfig.s: src/LrpcConfig.cc.s
 
 # target to generate assembly for a file
 src/LrpcConfig.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcConfig.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcConfig.cc.s
 .PHONY : src/LrpcConfig.cc.s
 
 src/LrpcController.o: src/LrpcController.cc.o
@@ -230,7 +230,7 @@ src/LrpcController.o: src/LrpcController.cc.o
 
 # target to build an object file
 src/LrpcController.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcController.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcController.cc.o
 .PHONY : src/LrpcController.cc.o
 
 src/LrpcController.i: src/LrpcController.cc.i
@@ -238,7 +238,7 @@ src/LrpcController.i: src/LrpcController.cc.i
 
 # target to preprocess a source file
 src/LrpcController.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcController.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcController.cc.i
 .PHONY : src/LrpcController.cc.i
 
 src/LrpcController.s: src/LrpcController.cc.s
@@ -246,7 +246,7 @@ src/LrpcController.s: src/LrpcController.cc.s
 
 # target to generate assembly for a file
 src/LrpcController.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcController.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcController.cc.s
 .PHONY : src/LrpcController.cc.s
 
 src/LrpcHeader.pb.o: src/LrpcHeader.pb.cc.o
@@ -254,7 +254,7 @@ src/LrpcHeader.pb.o: src/LrpcHeader.pb.cc.o
 
 # target to build an object file
 src/LrpcHeader.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcHeader.pb.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcHeader.pb.cc.o
 .PHONY : src/LrpcHeader.pb.cc.o
 
 src/LrpcHeader.pb.i: src/LrpcHeader.pb.cc.i
@@ -262,7 +262,7 @@ src/LrpcHeader.pb.i: src/LrpcHeader.pb.cc.i
 
 # target to preprocess a source file
 src/LrpcHeader.pb.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcHeader.pb.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcHeader.pb.cc.i
 .PHONY : src/LrpcHeader.pb.cc.i
 
 src/LrpcHeader.pb.s: src/LrpcHeader.pb.cc.s
@@ -270,15 +270,39 @@ src/LrpcHeader.pb.s: src/LrpcHeader.pb.cc.s
 
 # target to generate assembly for a file
 src/LrpcHeader.pb.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcHeader.pb.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcHeader.pb.cc.s
 .PHONY : src/LrpcHeader.pb.cc.s
+
+src/LrpcLogger.o: src/LrpcLogger.cc.o
+.PHONY : src/LrpcLogger.o
+
+# target to build an object file
+src/LrpcLogger.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcLogger.cc.o
+.PHONY : src/LrpcLogger.cc.o
+
+src/LrpcLogger.i: src/LrpcLogger.cc.i
+.PHONY : src/LrpcLogger.i
+
+# target to preprocess a source file
+src/LrpcLogger.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcLogger.cc.i
+.PHONY : src/LrpcLogger.cc.i
+
+src/LrpcLogger.s: src/LrpcLogger.cc.s
+.PHONY : src/LrpcLogger.s
+
+# target to generate assembly for a file
+src/LrpcLogger.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcLogger.cc.s
+.PHONY : src/LrpcLogger.cc.s
 
 src/LrpcProvider.o: src/LrpcProvider.cc.o
 .PHONY : src/LrpcProvider.o
 
 # target to build an object file
 src/LrpcProvider.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcProvider.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcProvider.cc.o
 .PHONY : src/LrpcProvider.cc.o
 
 src/LrpcProvider.i: src/LrpcProvider.cc.i
@@ -286,7 +310,7 @@ src/LrpcProvider.i: src/LrpcProvider.cc.i
 
 # target to preprocess a source file
 src/LrpcProvider.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcProvider.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcProvider.cc.i
 .PHONY : src/LrpcProvider.cc.i
 
 src/LrpcProvider.s: src/LrpcProvider.cc.s
@@ -294,7 +318,7 @@ src/LrpcProvider.s: src/LrpcProvider.cc.s
 
 # target to generate assembly for a file
 src/LrpcProvider.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/LrpcProvider.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/LrpcProvider.cc.s
 .PHONY : src/LrpcProvider.cc.s
 
 src/zookeeperutil.o: src/zookeeperutil.cc.o
@@ -302,7 +326,7 @@ src/zookeeperutil.o: src/zookeeperutil.cc.o
 
 # target to build an object file
 src/zookeeperutil.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/zookeeperutil.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/zookeeperutil.cc.o
 .PHONY : src/zookeeperutil.cc.o
 
 src/zookeeperutil.i: src/zookeeperutil.cc.i
@@ -310,7 +334,7 @@ src/zookeeperutil.i: src/zookeeperutil.cc.i
 
 # target to preprocess a source file
 src/zookeeperutil.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/zookeeperutil.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/zookeeperutil.cc.i
 .PHONY : src/zookeeperutil.cc.i
 
 src/zookeeperutil.s: src/zookeeperutil.cc.s
@@ -318,7 +342,7 @@ src/zookeeperutil.s: src/zookeeperutil.cc.s
 
 # target to generate assembly for a file
 src/zookeeperutil.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/src/zookeeperutil.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/zookeeperutil.cc.s
 .PHONY : src/zookeeperutil.cc.s
 
 user/user.pb.o: user/user.pb.cc.o
@@ -326,7 +350,7 @@ user/user.pb.o: user/user.pb.cc.o
 
 # target to build an object file
 user/user.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/user/user.pb.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/user/user.pb.cc.o
 .PHONY : user/user.pb.cc.o
 
 user/user.pb.i: user/user.pb.cc.i
@@ -334,7 +358,7 @@ user/user.pb.i: user/user.pb.cc.i
 
 # target to preprocess a source file
 user/user.pb.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/user/user.pb.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/user/user.pb.cc.i
 .PHONY : user/user.pb.cc.i
 
 user/user.pb.s: user/user.pb.cc.s
@@ -342,7 +366,7 @@ user/user.pb.s: user/user.pb.cc.s
 
 # target to generate assembly for a file
 user/user.pb.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/user/user.pb.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/user/user.pb.cc.s
 .PHONY : user/user.pb.cc.s
 
 # Help Target
@@ -353,7 +377,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... server_test"
+	@echo "... server"
 	@echo "... example/callee/Lservice.o"
 	@echo "... example/callee/Lservice.i"
 	@echo "... example/callee/Lservice.s"
@@ -372,6 +396,9 @@ help:
 	@echo "... src/LrpcHeader.pb.o"
 	@echo "... src/LrpcHeader.pb.i"
 	@echo "... src/LrpcHeader.pb.s"
+	@echo "... src/LrpcLogger.o"
+	@echo "... src/LrpcLogger.i"
+	@echo "... src/LrpcLogger.s"
 	@echo "... src/LrpcProvider.o"
 	@echo "... src/LrpcProvider.i"
 	@echo "... src/LrpcProvider.s"

@@ -4,6 +4,7 @@
 #include"LrpcApplication.h"
 #include<cstdlib>
 #include<iostream>
+#include"LrpcLogger.h"
 
 std::mutex cv_mutex;
 std::condition_variable cv;
@@ -26,7 +27,7 @@ void global_watcher(zhandle_t* zh, int type, int state, const char* path, void* 
         cv.notify_all();
     }
     else{
-        std::cout<<"zookeeper_watcher: type = "<<type<<", state = "<<state<<", path = "<<path<<std::endl;
+        LOG_ERROR("zookeeper_watcher: type = %d, state = %d, path = %s",type,state,path);
         exit(EXIT_FAILURE);
     }
 }
@@ -37,13 +38,13 @@ void ZooClient::Start(){
     std::string serviceaddr = ip + ":" + port;
     zkhandle = zookeeper_init(serviceaddr.c_str(), global_watcher, 6000, nullptr, nullptr, 0);
     if(zkhandle == nullptr){
-        std::cout<<"zookeeper_init failed"<<std::endl;
+        LOG_ERROR("zookeeper_init failed");
         exit(EXIT_FAILURE);
     }
 
     std::unique_lock<std::mutex> lock(cv_mutex);
     cv.wait(lock, []{return is_connected;});
-    std::cout<<"zookeeper_init success"<<std::endl;
+    LOG_INFO("zookeeper_init success");
 }
 
 void ZooClient::Create(const char* path, const char* data, int datalen, int flags){
@@ -52,13 +53,13 @@ void ZooClient::Create(const char* path, const char* data, int datalen, int flag
     if(zoo_exists(zkhandle,path,0,nullptr) == ZNONODE){
         int ret = zoo_create(zkhandle,path,data,datalen,&ZOO_OPEN_ACL_UNSAFE,flags,path_buffer,bufferlen);
         if(ret != ZOK){
-            std::cout<<"zookeeper_create failed"<<std::endl;
+            LOG_ERROR("zookeeper_create failed");
             exit(EXIT_FAILURE);
         }
-        std::cout<<"zookeeper_create success, path = "<<path_buffer<<std::endl;
+        LOG_INFO("zookeeper_create success, path = %s",path_buffer);
     }
     else{
-        std::cout<<"zookeeper_create failed, znode already exists, path = "<<path<<std::endl;
+        LOG_ERROR("zookeeper_create failed, znode already exists, path = %s",path);
     }
 }
 
@@ -67,7 +68,7 @@ std::string ZooClient::GetData(const std::string& path){
     int datalen = sizeof(data_buffer);
     int ret = zoo_get(zkhandle,path.c_str(),0,data_buffer,&datalen,nullptr);
     if(ret != ZOK){
-        std::cout<<"zookeeper_get failed, path = "<<path<<std::endl;
+        LOG_ERROR("zookeeper_get failed, path = %s",path.c_str());  
         exit(EXIT_FAILURE);
     }
     return std::string(data_buffer);

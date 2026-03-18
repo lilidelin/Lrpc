@@ -1,4 +1,4 @@
-CMakeFiles/client_test.dir/src/zookeeperutil.cc.o: \
+CMakeFiles/server.dir/src/zookeeperutil.cc.o: \
  /home/projects/Lrpc/src/zookeeperutil.cc /usr/include/stdc-predef.h \
  /home/projects/Lrpc/./src/include/zookeeperutil.h \
  /usr/include/c++/11/string \

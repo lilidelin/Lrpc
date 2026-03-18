@@ -6,6 +6,7 @@
 #include<iostream>
 #include<cstdio>
 #include<iomanip>
+#include"LrpcLogger.h"
 
 using namespace std;
 
@@ -13,11 +14,11 @@ void LrpcProvider::NotifyService(google::protobuf::Service* service){
     ServiceInfo info;
     info.service = service;
     const google::protobuf::ServiceDescriptor* serviceDesc = service->GetDescriptor();
-    std::string serviceName = serviceDesc->full_name();
-    std::cout<<"serviceName:"<<serviceName<<std::endl;
+    std::string serviceName = serviceDesc->name();
+    LOG_INFO("Register serviceName:%s",serviceName.c_str());
     for(int i=0;i<serviceDesc->method_count();i++){
-        std::string methodName = serviceDesc->method(i)->full_name();
-        std::cout<<"methodname:"<<methodName<<std::endl;
+        std::string methodName = serviceDesc->method(i)->name();
+        LOG_INFO("Register methodName:%s",methodName.c_str());
         info.methodMap.insert({methodName,serviceDesc->method(i)});
     }
     serviceMap.insert({serviceName,info});
@@ -42,6 +43,7 @@ void LrpcProvider::ZKtest(){
 }
 
 void LrpcProvider::Run(){
+    LOG_INFO("Run: start");
     std::string ip = LrpcApplication::GetInstance().GetConfig().Load("rpcserverip");
     int port = std::stoi(LrpcApplication::GetInstance().GetConfig().Load("rpcserverport"));
 
@@ -51,12 +53,16 @@ void LrpcProvider::Run(){
 
     server->setConnectionCallback(std::bind(&LrpcProvider::OnConnection,this,std::placeholders::_1));
     server->setMessageCallback(std::bind(&LrpcProvider::OnMessage,this,std::placeholders::_1,std::placeholders::_2,std::placeholders::_3));
-    
+
     server->setThreadNum(4);
 
+    LOG_INFO("Run: before zkclient.Start()");
     ZooClient zkclient;
     zkclient.Start();
+    LOG_INFO("Run: after zkclient.Start(), serviceMap size = %zu", serviceMap.size());
+
     for(auto& service:serviceMap){
+        LOG_INFO("Run: registering service: %s", service.first.c_str());
         std::string servicePath = "/" + service.first;
         zkclient.Create(servicePath.c_str(),nullptr,0,0);
         for(auto& method:service.second.methodMap){
@@ -67,7 +73,7 @@ void LrpcProvider::Run(){
         }
     }
 
-    std::cout<<"LrpcProvider start serving at ip:"<<ip<<" port:"<<port<<std::endl;
+    LOG_INFO("LrpcProvider start serving at ip:%s port:%d",ip.c_str(),port);
     server->start();
     event_loop.loop();
 }
@@ -79,8 +85,7 @@ void LrpcProvider::OnConnection(const muduo::net::TcpConnectionPtr& conn){
 }
 
 void LrpcProvider::OnMessage(const muduo::net::TcpConnectionPtr& conn, muduo::net::Buffer* buffer, muduo::Timestamp time){
-    std::cout<<"OnMessage called!"<<std::endl;
-
+    LOG_INFO("OnMessage called!");
     std::string recv_buf = buffer->retrieveAllAsString();
 
     google::protobuf::io::ArrayInputStream raw_input(recv_buf.data(),recv_buf.size());
@@ -88,7 +93,7 @@ void LrpcProvider::OnMessage(const muduo::net::TcpConnectionPtr& conn, muduo::ne
 
     uint32_t header_size{};
     coded_input.ReadVarint32(&header_size);
-    std::cout<<"header_size:"<<header_size<<std::endl;
+    LOG_INFO("header_size:%d",header_size);
 
     std::string rpc_header_str;
     Lrpc::RpcHeader rpc_header;
@@ -98,7 +103,7 @@ void LrpcProvider::OnMessage(const muduo::net::TcpConnectionPtr& conn, muduo::ne
 
     google::protobuf::io::CodedInputStream::Limit msg_limit = coded_input.PushLimit(header_size);
     coded_input.ReadString(&rpc_header_str,header_size);
-    std::cout<<"rpc_header_str size:"<<rpc_header_str.size()<<" content:";
+    LOG_INFO("rpc_header_str size:%zu content:",rpc_header_str.size());
     for(unsigned char c : rpc_header_str){
         std::cout<<std::hex<<std::setw(2)<<std::setfill('0')<<(int)c<<" ";
     }
@@ -110,29 +115,29 @@ void LrpcProvider::OnMessage(const muduo::net::TcpConnectionPtr& conn, muduo::ne
         service_name = rpc_header.service_name();
         method_name = rpc_header.method_name();
         args_size = rpc_header.args_size();
-        std::cout<<"service_name:"<<service_name<<" method_name:"<<method_name<<" args_size:"<<args_size<<std::endl;
+        LOG_INFO("service_name:%s method_name:%s args_size:%d",service_name.c_str(),method_name.c_str(),args_size);
     }
     else{
-        std::cout<<"rpc_header_str parse failed!"<<std::endl;
+        LOG_ERROR("rpc_header_str parse failed!");
         return;
     }
     
     std::string args_str;
     bool read_args_succ = coded_input.ReadString(&args_str,args_size);
     if(!read_args_succ){
-        std::cout<<"read args_str failed!"<<std::endl;
+        LOG_ERROR("read args_str failed!");
         return;
     }
 
     auto it = serviceMap.find(service_name);
     if(it == serviceMap.end()){
-        std::cout<<"service_name:"<<service_name<<" not found!"<<std::endl;
+        LOG_ERROR("service_name:%s not found!",service_name.c_str());
         return;
     }
 
     auto method_it = it->second.methodMap.find(method_name);
     if(method_it == it->second.methodMap.end()){
-        std::cout<<"method_name:"<<method_name<<" not found!"<<std::endl;
+        LOG_ERROR("method_name:%s not found!",method_name.c_str());
         return;
     }
 
@@ -141,7 +146,7 @@ void LrpcProvider::OnMessage(const muduo::net::TcpConnectionPtr& conn, muduo::ne
     
     google::protobuf::Message* request = service->GetRequestPrototype(method).New();
     if(!request->ParseFromString(args_str)){
-        std::cout<<"args_str parse failed!"<<std::endl;
+        LOG_ERROR("args_str parse failed!");
         return;
     }
 
@@ -164,7 +169,7 @@ void LrpcProvider::SendResponse(const muduo::net::TcpConnectionPtr& conn, google
         conn->send(response_str);
     }
     else{
-        std::cout<<"response_str serialize failed!"<<std::endl;
+        LOG_ERROR("response_str serialize failed!");
     }
 }
 

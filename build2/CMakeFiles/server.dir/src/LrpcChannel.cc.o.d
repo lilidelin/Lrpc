@@ -1,4 +1,4 @@
-CMakeFiles/client_test.dir/src/LrpcChannel.cc.o: \
+CMakeFiles/server.dir/src/LrpcChannel.cc.o: \
  /home/projects/Lrpc/src/LrpcChannel.cc /usr/include/stdc-predef.h \
  /home/projects/Lrpc/./src/include/LrpcChannel.h \
  /usr/include/google/protobuf/service.h /usr/include/c++/11/string \

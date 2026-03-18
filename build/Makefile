@@ -273,6 +273,30 @@ src/LrpcHeader.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.s
 .PHONY : src/LrpcHeader.pb.cc.s
 
+src/LrpcLogger.o: src/LrpcLogger.cc.o
+.PHONY : src/LrpcLogger.o
+
+# target to build an object file
+src/LrpcLogger.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcLogger.cc.o
+.PHONY : src/LrpcLogger.cc.o
+
+src/LrpcLogger.i: src/LrpcLogger.cc.i
+.PHONY : src/LrpcLogger.i
+
+# target to preprocess a source file
+src/LrpcLogger.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcLogger.cc.i
+.PHONY : src/LrpcLogger.cc.i
+
+src/LrpcLogger.s: src/LrpcLogger.cc.s
+.PHONY : src/LrpcLogger.s
+
+# target to generate assembly for a file
+src/LrpcLogger.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_test.dir/build.make CMakeFiles/client_test.dir/src/LrpcLogger.cc.s
+.PHONY : src/LrpcLogger.cc.s
+
 src/LrpcProvider.o: src/LrpcProvider.cc.o
 .PHONY : src/LrpcProvider.o
 
@@ -372,6 +396,9 @@ help:
 	@echo "... src/LrpcHeader.pb.o"
 	@echo "... src/LrpcHeader.pb.i"
 	@echo "... src/LrpcHeader.pb.s"
+	@echo "... src/LrpcLogger.o"
+	@echo "... src/LrpcLogger.i"
+	@echo "... src/LrpcLogger.s"
 	@echo "... src/LrpcProvider.o"
 	@echo "... src/LrpcProvider.i"
 	@echo "... src/LrpcProvider.s"

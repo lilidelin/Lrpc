@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/client_test.dir/src/LrpcController.cc.o.d"
   "CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.o"
   "CMakeFiles/client_test.dir/src/LrpcHeader.pb.cc.o.d"
+  "CMakeFiles/client_test.dir/src/LrpcLogger.cc.o"
+  "CMakeFiles/client_test.dir/src/LrpcLogger.cc.o.d"
   "CMakeFiles/client_test.dir/src/LrpcProvider.cc.o"
   "CMakeFiles/client_test.dir/src/LrpcProvider.cc.o.d"
   "CMakeFiles/client_test.dir/src/zookeeperutil.cc.o"

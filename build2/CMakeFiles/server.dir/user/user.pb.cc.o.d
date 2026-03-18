@@ -1,7 +1,6 @@
-CMakeFiles/client_test.dir/src/LrpcChannel.cc.o: \
- /home/projects/Lrpc/src/LrpcChannel.cc /usr/include/stdc-predef.h \
- /home/projects/Lrpc/./src/include/LrpcChannel.h \
- /usr/include/google/protobuf/service.h /usr/include/c++/11/string \
+CMakeFiles/server.dir/user/user.pb.cc.o: \
+ /home/projects/Lrpc/user/user.pb.cc /usr/include/stdc-predef.h \
+ /home/projects/Lrpc/user/user.pb.h /usr/include/c++/11/limits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -12,7 +11,7 @@ CMakeFiles/client_test.dir/src/LrpcChannel.cc.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
- /usr/include/c++/11/bits/stringfwd.h \
+ /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/memoryfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/stl_algobase.h \
@@ -127,14 +126,12 @@ CMakeFiles/client_test.dir/src/LrpcChannel.cc.o: \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /usr/include/google/protobuf/stubs/callback.h \
- /usr/include/google/protobuf/stubs/macros.h \
- /usr/include/google/protobuf/stubs/port.h /usr/include/assert.h \
- /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstddef \
- /usr/include/string.h /usr/include/strings.h \
- /usr/include/google/protobuf/stubs/platform_macros.h \
  /usr/include/google/protobuf/port_def.inc \
- /usr/include/x86_64-linux-gnu/sys/param.h \
+ /usr/include/google/protobuf/port_undef.inc \
+ /usr/include/google/protobuf/io/coded_stream.h /usr/include/assert.h \
+ /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/11/climits \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -142,7 +139,10 @@ CMakeFiles/client_test.dir/src/LrpcChannel.cc.o: \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/signal.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/c++/11/cstddef \
+ /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/x86_64-linux-gnu/sys/param.h /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
@@ -173,12 +173,9 @@ CMakeFiles/client_test.dir/src/LrpcChannel.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
  /usr/include/x86_64-linux-gnu/bits/param.h /usr/include/linux/param.h \
  /usr/include/x86_64-linux-gnu/asm/param.h \
- /usr/include/asm-generic/param.h /usr/include/byteswap.h \
- /usr/include/google/protobuf/port_undef.inc \
+ /usr/include/asm-generic/param.h \
  /usr/include/google/protobuf/stubs/common.h \
- /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
- /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
@@ -220,41 +217,16 @@ CMakeFiles/client_test.dir/src/LrpcChannel.cc.o: \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/bits/refwrap.h /usr/include/c++/11/ext/concurrence.h \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
- /usr/include/c++/11/bits/atomic_base.h \
- /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h /usr/include/c++/11/set \
  /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h /usr/include/c++/11/vector \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/projects/Lrpc/./src/include/zookeeperutil.h \
- /usr/include/zookeeper/zookeeper.h \
- /usr/include/x86_64-linux-gnu/sys/socket.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
- /usr/include/x86_64-linux-gnu/bits/socket.h \
- /usr/include/x86_64-linux-gnu/bits/socket_type.h \
- /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
- /usr/include/x86_64-linux-gnu/asm/socket.h \
- /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
- /usr/include/asm-generic/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h \
- /usr/include/x86_64-linux-gnu/asm/sockios.h \
- /usr/include/asm-generic/sockios.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/zookeeper/proto.h \
- /usr/include/zookeeper/zookeeper_version.h \
- /usr/include/zookeeper/recordio.h \
- /usr/include/zookeeper/zookeeper.jute.h \
- /home/projects/Lrpc/./src/include/LrpcHeader.pb.h \
- /usr/include/c++/11/limits \
- /usr/include/google/protobuf/io/coded_stream.h \
- /usr/include/c++/11/atomic /usr/include/c++/11/climits \
- /usr/include/c++/11/cstring /usr/include/google/protobuf/stubs/logging.h \
+ /usr/include/google/protobuf/stubs/port.h /usr/include/c++/11/stdlib.h \
+ /usr/include/google/protobuf/stubs/platform_macros.h \
+ /usr/include/byteswap.h /usr/include/google/protobuf/stubs/macros.h \
+ /usr/include/google/protobuf/stubs/logging.h \
  /usr/include/google/protobuf/stubs/strutil.h \
  /usr/include/google/protobuf/stubs/stringpiece.h \
  /usr/include/google/protobuf/stubs/hash.h \
@@ -298,13 +270,10 @@ CMakeFiles/client_test.dir/src/LrpcChannel.cc.o: \
  /usr/include/google/protobuf/generated_enum_reflection.h \
  /usr/include/google/protobuf/unknown_field_set.h \
  /usr/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
+ /usr/include/google/protobuf/stubs/callback.h \
  /usr/include/google/protobuf/stubs/stl_util.h \
  /usr/include/google/protobuf/message.h \
  /usr/include/google/protobuf/extension_set.h /usr/include/c++/11/cassert \
- /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h \
- /usr/include/arpa/inet.h /home/projects/Lrpc/./src/include/LrpcLogger.h \
- /usr/include/c++/11/condition_variable /usr/include/c++/11/queue \
- /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
- /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/bits/stl_queue.h \
- /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
- /usr/include/c++/11/bits/this_thread_sleep.h
+ /usr/include/google/protobuf/service.h \
+ /usr/include/google/protobuf/reflection_ops.h \
+ /usr/include/google/protobuf/wire_format.h

@@ -1,0 +1,16 @@
+18:41:27 => [INFO][/home/projects/Lrpc/src/LrpcProvider.cc:18] Register serviceName:UserServiceRpc
+18:41:27 => [INFO][/home/projects/Lrpc/src/LrpcProvider.cc:21] Register methodName:Login
+18:41:27 => [INFO][/home/projects/Lrpc/src/LrpcProvider.cc:21] Register methodName:Register
+18:41:27 => [INFO][/home/projects/Lrpc/src/LrpcProvider.cc:46] Run: start
+18:41:27 => [INFO][/home/projects/Lrpc/src/LrpcProvider.cc:59] Run: before zkclient.Start()
+18:41:27 => [INFO][/home/projects/Lrpc/src/zookeeperutil.cc:47] zookeeper_init success
+18:41:27 => [INFO][/home/projects/Lrpc/src/LrpcProvider.cc:62] Run: after zkclient.Start(), serviceMap size = 1
+18:41:27 => [INFO][/home/projects/Lrpc/src/LrpcProvider.cc:65] Run: registering service: UserServiceRpc
+18:41:27 => [ERROR][/home/projects/Lrpc/src/zookeeperutil.cc:62] zookeeper_create failed, znode already exists, path = /UserServiceRpc
+18:41:27 => [INFO][/home/projects/Lrpc/src/zookeeperutil.cc:59] zookeeper_create success, path = /UserServiceRpc/Register
+18:41:27 => [INFO][/home/projects/Lrpc/src/zookeeperutil.cc:59] zookeeper_create success, path = /UserServiceRpc/Login
+18:41:27 => [INFO][/home/projects/Lrpc/src/LrpcProvider.cc:76] LrpcProvider start serving at ip:127.0.0.1 port:8000
+18:41:59 => [INFO][/home/projects/Lrpc/src/LrpcProvider.cc:88] OnMessage called!
+18:41:59 => [INFO][/home/projects/Lrpc/src/LrpcProvider.cc:96] header_size:25
+18:41:59 => [INFO][/home/projects/Lrpc/src/LrpcProvider.cc:106] rpc_header_str size:25 content:
+18:41:59 => [INFO][/home/projects/Lrpc/src/LrpcProvider.cc:118] service_name:UserServiceRpc method_name:Login args_size:14

@@ -6,6 +6,7 @@
 #include<atomic>
 #include<thread>
 #include<chrono>
+#include"LrpcLogger.h"
 
 void SendRequest(int thread_id,std::atomic<int>& success_count,std::atomic<int>& fail_count){
     Luser::UserServiceRpc_Stub stub(new LrpcChannel(false));
@@ -17,21 +18,22 @@ void SendRequest(int thread_id,std::atomic<int>& success_count,std::atomic<int>&
     LrpcController controller;
     stub.Login(&controller,&request,&response, nullptr);
     if(controller.Failed()){
-        std::cout<<"Thread "<<thread_id<<" fail: "<<controller.ErrorText()<<std::endl;
+        LOG_ERROR("Thread %d fail: %s",thread_id,controller.ErrorText().c_str());
         fail_count++;
     }else{
         if(0 == response.result().errcode()){
-            std::cout<<"Thread "<<thread_id<<" success: "<<response.success()<<std::endl;
+            LOG_INFO("Thread %d success: %d",thread_id,response.success());
             success_count++;
         }
         else{
-            std::cout<<"Thread "<<thread_id<<" fail: "<<response.result().errmsg()<<std::endl;
+            LOG_ERROR("Thread %d fail: %s",thread_id,response.result().errmsg().c_str());
             fail_count++;
         }
     }
 }
 
 int main(int argc,char** argv){
+    LOG_INFO("LClient start");
     LrpcApplication::Init(argc, argv);
 
     const int thread_num = 1;
